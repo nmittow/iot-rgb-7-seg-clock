@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rpi_7seg_alarm_clock-rescue)(type Legacy)(uri ${KIPRJMOD}/rpi_7seg_alarm_clock-rescue.lib)(options "")(descr ""))
+)

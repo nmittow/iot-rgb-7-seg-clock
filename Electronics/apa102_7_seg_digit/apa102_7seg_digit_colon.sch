@@ -1,0 +1,131 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:APA102-2020 D1
+U 1 1 5E571E9D
+P 6750 4800
+F 0 "D1" H 6750 5281 50  0000 C CNN
+F 1 "A_0" H 6750 5400 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 6800 4500 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 6850 4425 50  0001 L TNN
+	1    6750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5E5AF34A
+P 6750 4500
+F 0 "#PWR03" H 6750 4350 50  0001 C CNN
+F 1 "+5V" H 6850 4550 50  0000 C CNN
+F 2 "" H 6750 4500 50  0001 C CNN
+F 3 "" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E5B0907
+P 6750 5100
+F 0 "#PWR04" H 6750 4850 50  0001 C CNN
+F 1 "GND" H 6850 4950 50  0000 C CNN
+F 2 "" H 6750 5100 50  0001 C CNN
+F 3 "" H 6750 5100 50  0001 C CNN
+	1    6750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E4F4A39
+P 7400 4600
+F 0 "J2" H 7480 4592 50  0000 L CNN
+F 1 "SPI_OUT" H 7480 4501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7400 4600 50  0001 C CNN
+F 3 "~" H 7400 4600 50  0001 C CNN
+	1    7400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E4F79DC
+P 6150 4900
+F 0 "J1" H 6300 4800 50  0000 C CNN
+F 1 "SPI_IN" H 6350 4900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6150 4900 50  0001 C CNN
+F 3 "~" H 6150 4900 50  0001 C CNN
+	1    6150 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5E501204
+P 7050 4500
+F 0 "#PWR05" H 7050 4350 50  0001 C CNN
+F 1 "+5V" H 7050 4650 50  0000 C CNN
+F 2 "" H 7050 4500 50  0001 C CNN
+F 3 "" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E50226E
+P 7200 4500
+F 0 "#PWR06" H 7200 4250 50  0001 C CNN
+F 1 "GND" H 7200 4350 50  0000 C CNN
+F 2 "" H 7200 4500 50  0001 C CNN
+F 3 "" H 7200 4500 50  0001 C CNN
+	1    7200 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5E505B77
+P 6500 5000
+F 0 "#PWR01" H 6500 4850 50  0001 C CNN
+F 1 "+5V" H 6500 5150 50  0000 C CNN
+F 2 "" H 6500 5000 50  0001 C CNN
+F 3 "" H 6500 5000 50  0001 C CNN
+	1    6500 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E50D7AF
+P 6350 5000
+F 0 "#PWR02" H 6350 4750 50  0001 C CNN
+F 1 "GND" H 6350 4850 50  0000 C CNN
+F 2 "" H 6350 5000 50  0001 C CNN
+F 3 "" H 6350 5000 50  0001 C CNN
+	1    6350 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4700 6450 4700
+Wire Wire Line
+	6350 4800 6450 4800
+Wire Wire Line
+	6500 5000 6500 4900
+Wire Wire Line
+	6500 4900 6350 4900
+Wire Wire Line
+	7050 4500 7050 4600
+Wire Wire Line
+	7050 4600 7200 4600
+Wire Wire Line
+	7200 4700 7050 4700
+Wire Wire Line
+	7200 4800 7050 4800
+$EndSCHEMATC
